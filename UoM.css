@@ -2,10 +2,8 @@
 
 .title-slide{
   /*vertical-align:middle;*/
-  background: #660099;
-  background: -webkit-radial-gradient(center, #660099, #440066);
-  background: -moz-radial-gradient(center, #660099, #440066);
-  background: radial-gradient(ellipse at center, #660099, #440066);
+  background-image: url("logos/title_background.png");
+  background-size: cover;
 }
 
 /* title */
@@ -13,7 +11,7 @@
   font-weight: bold;
   font-family: Arial;
   font-size: 30px;
-  text-align: left;
+  text-align: right;
   color: white;
   border-bottom: 3px white dotted;
   padding-bottom: 10px;
@@ -26,7 +24,7 @@
   padding-top: 20%;
   font-family: Arial;
   font-size: 24px;
-  text-align: left;
+  text-align: right;
   color: white;
 }
 
@@ -45,6 +43,7 @@
   font-weight: 400;
   font-family: Arial;
   font-size: 18px;
+  text-align: right;
   color: white;
 }
 /* optional: date */
@@ -56,6 +55,9 @@
   color: white;
 }
 
+
+
+
 .UoM-logo-white{
   background-image: url("logos/UoM_allwhite.png");
   background-size: contain;
@@ -66,6 +68,25 @@
   width: 230px;
   height: 200px;
   z-index: 0;
+}
+
+.UoM-logo-crim{
+  background-image: url("logos/CrimUoM-icon-logo-Y.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  left: 80px;
+  width: 230px;
+  height: 200px;
+  z-index: 0;
+}
+
+
+.white-bg-content{
+  background: #FFFFFF;
+  color: #660099;
+  font-family: Arial;
 }
 
 .remark-slide-content{
@@ -98,17 +119,34 @@ img{
   padding: 5px 5px 5px 5px;
 }
 
+.UoM-left-title {
+  position: absolute;
+  top: 10%;
+  right: 75%;
+  text-align: left;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
 .UoM-left {
   float: left;
   width: 64%;
 }
+
 .UoM-right {
   position: absolute;
   top: 1%;
   left: 65%;
   text-align: right;
-  padding-right: 10px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
+
+
 
 .UoM-right ~ * {
   clear: both;
@@ -166,4 +204,11 @@ blockquote:before {
 .right-plot img{
   padding: 0;
 }
+
+
+
+
+
+
+
 

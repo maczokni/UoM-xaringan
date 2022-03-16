@@ -1,20 +1,19 @@
 ---
-title: "University of Manchester Power Point Slides <br> as Xaringan template"
-subtitle: "David Schoch <br> The Mitchell Centre for Social Network Analysis"
+title: ""
+subtitle: ""
 author: ""
 date: ""
 institute: ""
 output:
   xaringan::moon_reader:
     includes:
-      after_body: insert-logo.html
-    css: "UoM.css"
+    css: ["default", "UoM.css", "titleCrim.css"]
     nature:
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: ""
       ratio: "16:9"
-    seal: true
+    seal: false
 ---
 
 ```{r setup, include=FALSE}
@@ -46,8 +45,30 @@ theme_uom <- function () {
 
 
 ```
+class: title-slide  
+
+.pull-right[
+
+# Title
+## Subtitle
+
+## Reka Solymosi
+## Criminology
+## School of Social Sciences
+
+]
 
 
+.UoM-left-title[
+
+```{r logo, echo=FALSE}
+knitr::include_graphics("logos/CrimUoM-icon-logo-Y.png")
+```
+]
+
+
+
+---
 # Or images should
 
 - Be uniform in size
